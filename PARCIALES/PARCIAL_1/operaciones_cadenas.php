@@ -10,6 +10,8 @@ function contar_palabras_repetidas($texto){
     foreach ($texto as $txt){
         $arreglo[$txt] = $arreglo[$txt] +1;
     }
+    
+    return $arreglo;
 }
 
 //Recibe una cadena de texto y devuelvela con la primera letra de las palabras en mayuscula
