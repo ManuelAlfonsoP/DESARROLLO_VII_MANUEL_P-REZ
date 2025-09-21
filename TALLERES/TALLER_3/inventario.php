@@ -14,7 +14,6 @@ function ordjson($ca){
 }
 
 // Mostrar un resumen del inventario ordenado (Nombre, precio, cantidad)
-echo "Inventario:</br></br>";
 function resinv($ca){
     foreach ($ca as $c){
         echo "- " . $c['nombre'] . "; Precio:" . $c['precio']. "; Cantidad:". $c['cantidad']." </br>";
@@ -48,6 +47,7 @@ function bajos($ca){
 //Script Principal
 $ca = leerjson();
 $ca = ordjson($ca);
+echo "Inventario:</br></br>";
 resinv($ca);
 echo "</br>Total del inventario: ".totalinv($ca);
 bajos($ca);
