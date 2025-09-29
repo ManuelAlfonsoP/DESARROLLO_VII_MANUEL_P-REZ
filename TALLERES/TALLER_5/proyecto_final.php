@@ -1,6 +1,4 @@
 <?php
-// proyecto_final.php
-
 class Estudiante {
     public int $id;
     public string $nombre;
@@ -64,9 +62,6 @@ class Estudiante {
     }
 }
 
-// ----------------------------
-// Clase SistemaGestionEstudiantes
-// ----------------------------
 class SistemaGestionEstudiantes {
     private array $estudiantes;
     private array $graduados;
@@ -164,9 +159,7 @@ class SistemaGestionEstudiantes {
     }
 }
 
-// ----------------------------
 // Sección de prueba
-// ----------------------------
 $sistema = new SistemaGestionEstudiantes();
 
 // Crear 10 estudiantes con distintas carreras y calificaciones
