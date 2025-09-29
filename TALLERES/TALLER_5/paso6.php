@@ -113,11 +113,11 @@ function crecimientoVentas($ventas) {
 
 $crecimientos = crecimientoVentas($ventas);
 
-echo "\nCrecimiento de ventas (% del primer al último mes):\n";
+echo "<br><br>Crecimiento de ventas (% del primer al último mes):";
 foreach ($crecimientos as $region => $productos) {
     echo "$region:\n";
     foreach ($productos as $producto => $porcentaje) {
-        echo "  $producto: " . number_format($porcentaje, 2) . "%\n";
+        echo "  $producto: " . number_format($porcentaje, 2) . "% ";
     }
 }
 
@@ -135,6 +135,6 @@ foreach ($crecimientos as $region => $productos) {
     }
 }
 
-echo "\nProducto con mayor crecimiento: $productoTop en $regionTop ($mayorCrecimiento%)\n";
+echo "<br><br>Producto con mayor crecimiento: $productoTop en $regionTop ($mayorCrecimiento%) ";
 ?>
         
