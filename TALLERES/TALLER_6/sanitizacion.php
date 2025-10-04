@@ -4,6 +4,10 @@ function sanitizarNombre($nombre) {
     return filter_var(trim($nombre), FILTER_SANITIZE_STRING);
 }
 
+function sanitizarFechanacimiento($fecha) {
+    return(filter_var(trim($fecha), FILTER_SANITIZE_STRING));
+}
+
 function sanitizarEmail($email) {
     return filter_var(trim($email), FILTER_SANITIZE_EMAIL);
 }

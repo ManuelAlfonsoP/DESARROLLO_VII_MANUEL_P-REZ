@@ -3,6 +3,15 @@ function validarNombre($nombre) {
     return !empty($nombre) && strlen($nombre) <= 50;
 }
 
+function validarFechanacimiento($fecha) {
+    $fechanacimiento = new DateTime($fecha);
+    $hoy = new DateTime();
+    if($fechanacimiento > $hoy){
+        return false;
+    }
+    return true;
+}
+
 function validarEmail($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
