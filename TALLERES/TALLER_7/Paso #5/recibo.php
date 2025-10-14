@@ -31,8 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     'httponly' => true,
     'samesite' => 'Strict'
 ]);
-
-echo "Cookie segura $nombre creada.";
 }
 ?>
 
