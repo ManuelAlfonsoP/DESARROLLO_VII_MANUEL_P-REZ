@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "nombre": "Jabon",
+        "precio": 12.5
+    },
+    {
+        "id": 1,
+        "nombre": "Pan",
+        "precio": 4.0
+    },{
+        "id": 2,
+        "nombre": "Leche",
+        "precio": 3.5
+    },{
+        "id": 3,
+        "nombre": "Cereales",
+        "precio": 2.5
+    },{
+        "id": 4,
+        "nombre": "Arroz",
+        "precio": 1.75
+    }
+]
