@@ -1,14 +1,15 @@
 <?php
 include 'config_sesion.php';
+
 // Los datos vienen de un json, que actua como base de datos.
 $datosJson = file_get_contents("datos_de_usuarios.json");
 $datos = json_decode($datosJson, true);
 // Si ya hay una sesión activa, redirigir al panel correspondiente
 if(isset($_SESSION['usuario'])) {
-    if($_SESSION['usuario'] = "profesor"){
+    if($_SESSION['tipo'] == "profesor"){
         header("Location: DashboardProfesor.php");
         exit();
-    }elseif($_SESSION['usuario'] = "estudiante"){
+    }elseif($_SESSION['tipo'] == "estudiante"){
         header("Location: DashboardEstudiante.php");
         exit();
     }
