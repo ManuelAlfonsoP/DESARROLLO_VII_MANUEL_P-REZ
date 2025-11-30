@@ -1,6 +1,5 @@
 <?php
 
-define('GITHUB_TOKEN', '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');
 // Function to read .env file
 function loadEnv($path) {
     if(!file_exists($path)) {
