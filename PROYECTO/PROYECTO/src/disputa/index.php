@@ -56,7 +56,7 @@ switch ($action) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $decision = $_POST['decision'] ?? null;
 
-            if (in_array($decision, ['aceptada', 'rechazada'], true)) {
+            if (in_array($decision, ['resolved', 'rejected'], true)) {
                 $disputaManager->updateStatus($disputeId, $decision);
             }
             header('Location: index.php');
