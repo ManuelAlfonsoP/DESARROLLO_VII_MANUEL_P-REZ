@@ -63,21 +63,18 @@ ob_start();
                           class="d-flex flex-wrap gap-2">
                         <button type="submit"
                                 name="decision"
-                                value="aceptada"
+                                value="resolved"
                                 class="btn btn-success"
                                 onclick="return confirm('¿Aceptar esta disputa?');">
                             Aceptar disputa
                         </button>
                         <button type="submit"
                                 name="decision"
-                                value="rechazada"
+                                value="rejected"
                                 class="btn btn-danger"
                                 onclick="return confirm('¿Rechazar esta disputa?');">
                             Rechazar disputa
                         </button>
-                        <a href="index.php?action=admin" class="btn btn-outline-secondary ms-auto">
-                            Volver al listado
-                        </a>
                     </form>
                 </div>
             </div>

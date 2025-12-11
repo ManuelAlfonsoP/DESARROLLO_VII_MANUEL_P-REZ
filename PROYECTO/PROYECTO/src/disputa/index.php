@@ -59,12 +59,12 @@ switch ($action) {
             if (in_array($decision, ['aceptada', 'rechazada'], true)) {
                 $disputaManager->updateStatus($disputeId, $decision);
             }
-            header('Location: index.php?action=admin');
+            header('Location: index.php');
             exit;
         }
         $disputa = $disputaManager->getDisputeByIdcomplete($disputeId);
         if (!$disputa) {
-            header('Location: index.php?action=admin');
+            header('Location: index.php');
             exit;
         }
 
@@ -73,7 +73,7 @@ switch ($action) {
         break;
     default:
         $disputa = $disputaManager -> getAllDisputes();       
-        require BASE_PATH . '../../views/receipts.php';
+        require BASE_PATH . '../../views/user_disputes.php';
         break;
 
 }
